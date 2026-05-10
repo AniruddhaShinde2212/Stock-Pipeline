@@ -8,13 +8,13 @@ yfinance  →  Python pipeline  →  SQLite  →  FastAPI  →  React UI
 
 ## Stack
 
-| Layer       | Technology          |
-|-------------|---------------------|
-| Ingestion   | yfinance (free, no API key) |
-| Storage     | SQLite (swap to Postgres easily) |
-| Scheduler   | APScheduler         |
-| API         | FastAPI + Uvicorn   |
-| Frontend    | React + Recharts    |
+| Layer     | Technology                       |
+| --------- | -------------------------------- |
+| Ingestion | yfinance (free, no API key)      |
+| Storage   | SQLite (swap to Postgres easily) |
+| Scheduler | APScheduler                      |
+| API       | FastAPI + Uvicorn                |
+| Frontend  | React + Recharts                 |
 
 ## Project Structure
 
@@ -45,7 +45,7 @@ stock-pipeline/
 ### 1. Clone & set up Python
 
 ```bash
-git clone https://github.com/<you>/stock-pipeline.git
+git clone https://github.com/aniruddhashinde2212/Stock-Pipeline.git
 cd stock-pipeline
 
 python -m venv .venv
@@ -89,13 +89,13 @@ python pipeline.py --schedule
 
 ## API Endpoints
 
-| Method | Path                        | Description                         |
-|--------|-----------------------------|-------------------------------------|
-| GET    | `/symbols`                  | All symbols in DB                   |
-| GET    | `/quotes`                   | Latest real-time quotes             |
-| GET    | `/prices/{symbol}?days=180` | Historical OHLCV + MA20/50          |
-| GET    | `/summary/{symbol}`         | Performance summary                 |
-| GET    | `/compare?symbols=AAPL,MSFT`| Indexed comparison (base = 100)     |
+| Method | Path                         | Description                     |
+| ------ | ---------------------------- | ------------------------------- |
+| GET    | `/symbols`                   | All symbols in DB               |
+| GET    | `/quotes`                    | Latest real-time quotes         |
+| GET    | `/prices/{symbol}?days=180`  | Historical OHLCV + MA20/50      |
+| GET    | `/summary/{symbol}`          | Performance summary             |
+| GET    | `/compare?symbols=AAPL,MSFT` | Indexed comparison (base = 100) |
 
 ## Customising the Watchlist
 
