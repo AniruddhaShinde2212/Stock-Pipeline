@@ -79,6 +79,10 @@ npm run dev
 
 Open **http://localhost:5173**
 
+## Demo
+
+![Project Demo](assets/demo.gif)
+
 ### 5. (Optional) Run the scheduler
 
 Keep the pipeline running continuously — quotes refresh every 5 min, daily OHLCV at 18:00 UTC:
